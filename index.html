@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Sample Slideshow</title>
+	</head>
+	<body>
+		<script type="text/javascript" src="../slider/js/jssor.js"></script>
+		<script type="text/javascript" src="../slider/js/jssor.slider.js"></script>
+		<script>
+		    jssor_slider1_starter = function (containerId) {
+	            var options = {
+	                $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+	                $ArrowNavigatorOptions: {                       //[Optional] Options to specify and enable arrow navigator or not
+	                    $Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
+	                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+	                    $AutoCenter: 0,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+	                    $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
+	                }
+	            };
+
+	            var jssor_slider1 = new $JssorSlider$(containerId, options);
+	        };
+		</script>
+
+		<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 1028px; height: 768px; ">
+			<div u="slides"  style="position: absolute; left: 0px; top: 0px; width: 1028; height: 768; overflow: hidden;">
+				<div><img u="image" src="imgs/img1.jpg" /></div>
+				<div><img u="image" src="imgs/img2.jpg" /></div>
+				<div><img u="image" src="imgs/img3.jpg" /></div>
+				<div><img u="image" src="imgs/img4.jpg" /></div>
+				<div><img u="image" src="imgs/img5.jpg" /></div>
+				<div><img u="image" src="imgs/img6.jpg" /></div>
+			</div>
+		</div>
+
+		<p>
+		hello there
+		</p>
+
+		<script>
+            //jssor_slider1_starter('slider1_container');
+        </script>
+	</body>
+</html>
