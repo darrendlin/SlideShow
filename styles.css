@@ -1,0 +1,38 @@
+#slider_container, #slides {
+  width: 600px;
+  height: 300px;
+}
+
+#slider_container {
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+#slides {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+}
+
+/*
+.jssora03l              (normal)
+.jssora03r              (normal)
+.jssora03l:hover        (normal mouseover)
+.jssora03r:hover        (normal mouseover)
+.jssora03ldn            (mousedown)
+.jssora03rdn            (mousedown)
+*/
+.jssora03l, .jssora03r, .jssora03ldn, .jssora03rdn {
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  background: url(imgs/a03.png) no-repeat;
+  overflow:hidden;
+}
+.jssora03l { background-position: -3px -33px; }
+.jssora03r { background-position: -63px -33px; }
+.jssora03l:hover { background-position: -123px -33px; }
+.jssora03r:hover { background-position: -183px -33px; }
+.jssora03ldn { background-position: -243px -33px; }
+.jssora03rdn { background-position: -303px -33px; }
